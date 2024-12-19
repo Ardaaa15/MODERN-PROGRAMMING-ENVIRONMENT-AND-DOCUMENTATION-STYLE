@@ -1,0 +1,30 @@
+git checkout -b fitur-diskon
+// Metode untuk menghitung diskon
+public double hitungDiskon(double persentaseDiskon) {
+    return hitungTotalPesanan() * (persentaseDiskon / 100);
+}
+
+// Modifikasi tampilkanNota untuk menampilkan diskon
+public void tampilkanNota() {
+    System.out.println("===== NOTA PEMESANAN =====");
+    for (OrderItem item : daftarPesanan) {
+        System.out.println(item.getDetail());
+    }
+    double total = hitungTotalPesanan();
+    double diskon = hitungDiskon(10); // contoh diskon 10%
+    double totalSetelahDiskon = total - diskon;
+    System.out.printf("Total Harga: Rp %.2f%n", total);
+    System.out.printf("Diskon: Rp %.2f%n", diskon);
+    System.out.printf("Total Setelah Diskon: Rp %.2f%n", totalSetelahDiskon);
+    System.out.println("==========================");
+}
+
+git add .
+git commit -m "Menambahkan fitur diskon"
+git checkout main
+git merge fitur-diskon
+git push origin main
+
+git add README.md
+git commit -m "Menambahkan file README.md"
+git push origin main
