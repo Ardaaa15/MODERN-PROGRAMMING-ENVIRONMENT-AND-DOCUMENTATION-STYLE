@@ -1,0 +1,2 @@
+Tujuan dari program ini adalah untuk menyediakan aplikasi kasir sederhana yang dapat menghitung biaya total sewa apartemen berdasarkan lama waktu sewa yang dimasukkan oleh pengguna.
+Secara keseluruhan, tujuan utama program ini adalah untuk memberikan simulasi sederhana dari proses kasir dalam penyewaan apartemen, sekaligus memperlihatkan penerapan konsep-konsep dasar dalam pemrograman Java.
